@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro Cliente</title>
+</head>
+<body>
+<h1>Cadastro de clientes</h1>
+
+	<form action="salvarcliente" method="post">
+		<label>Nome</label>
+		<input name="nome"><br><br>
+		<label>Sobrenome</label>
+		<input name="sobrenome"><br><br>
+		<label>Email</label>
+		<input name="email"><br><br>
+		<label>CPF</label>
+		<input name="cpf"><br><br>
+		<label>Telefone</label>
+		<input name="telefone"><br><br>
+		<input type="submit" value="Salvar">
+	</form><br><br>
+	<a href="/">Pagina inicial</a><br><br>
+	<a href="/listaclientes">Lista de clientes</a>
+	<table>
+		<tr th:each="cliente : ${clientes}">
+			<td th:text = "${cliente.id}"></td>
+			<td th:text = "${cliente.nome}"></td>
+			<td th:text = "${cliente.sobrenome}"></td>
+			<td th:text = "${cliente.email}"></td>
+			<td th:text = "${cliente.cpf}"></td>
+			<td th:text = "${cliente.telefone}"></td>
+		</tr>
+	</table>
+</body>
+</html>
