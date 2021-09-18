@@ -47,8 +47,14 @@ ________________________________________________________________________________
 #### :mortar_board: Anderson Lira - Scrum Master
 - ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/alira1984) | 📧: anderson.lira2@fatec.sp.gov.br
 
-#### :mortar_board:  - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_]() | 📧: 
+#### :mortar_board: Andre Silva - Time de Desenvolvimento
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_]() | 📧: andre.silva@fatec.sp.gov.br
 
-#### :mortar_board:  - Time de Desenvolvimento
+#### :mortar_board: Danilo - Time de Desenvolvimento
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Danilo2010) | 📧: danilofatecsjc@gmail.com
+
+#### :mortar_board: Jean Gomes - Time de Desenvolvimento
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/jeangomes3) | 📧: 
+
+#### :mortar_board: Levi - Time de Desenvolvimento
 - ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_]() | 📧: 
