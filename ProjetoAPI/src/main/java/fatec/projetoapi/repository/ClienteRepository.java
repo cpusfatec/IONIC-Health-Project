@@ -10,6 +10,8 @@ import fatec.projetoapi.model.Cliente;
 @Transactional
 public interface ClienteRepository extends CrudRepository<Cliente, Long> {
 
+	Cliente getOne(long id);
+
 	
 	
 }

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <head>
 <meta charset="ISO-8859-1">
 <title>Cadastro Cliente</title>
 </head>
+<style>
+.container { 
+    text-align: center; 
+}
+</style>
 <body>
+<div class="container">
 <h1>Cadastro de clientes</h1>
 
 	<form action="salvarcliente" method="post">
@@ -18,11 +25,11 @@
 		<input name="cpf"><br><br>
 		<label>Telefone</label>
 		<input name="telefone"><br><br>
-		<input type="submit" value="Salvar">
+		<input class="btn btn-primary" type="submit" value="Salvar">
 	</form><br><br>
-	<a href="/">Pagina inicial</a><br><br>
-	<a href="/listaclientes">Lista de clientes</a>
-	<table>
+	<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
+	<a class="btn btn-primary" href="/listaclientes" role="button">Lista de clientes</a><br><br>
+	<table class="table table-striped" style="background-color: white; border-radius:20px; border:none;">
 		<tr th:each="cliente : ${clientes}">
 			<td th:text = "${cliente.id}"></td>
 			<td th:text = "${cliente.nome}"></td>
@@ -30,7 +37,9 @@
 			<td th:text = "${cliente.email}"></td>
 			<td th:text = "${cliente.cpf}"></td>
 			<td th:text = "${cliente.telefone}"></td>
+			<td><a th:href="@{/showFormForUpdate/{id}(id=${cliente.id})}">Editar</a></td>
 		</tr>
 	</table>
+</div>
 </body>
 </html>
