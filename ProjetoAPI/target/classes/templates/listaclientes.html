@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+<h1>Lista de clientes</h1><br>
+<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
+<a class="btn btn-primary" href="/cadastrocliente" role="button">Cadastro de Clientes</a><br><br>
+	<table class="table table-striped" style="background-color: white; border-radius:40px; border:none;">
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Email</th>
+				<th>Nome</th>
+				<th>Sobrenome</th>
+				<th>CPF</th>
+				<th>Telefone</th>
+				<th>Descrição</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="cliente : ${clientes}">
+				<td th:text = "${cliente.id}"></td>
+				<td th:text = "${cliente.nome}"></td>
+				<td th:text = "${cliente.sobrenome}"></td>
+				<td th:text = "${cliente.email}"></td>
+				<td th:text = "${cliente.cpf}"></td>
+				<td th:text = "${cliente.telefone}"></td>
+				<td th:text = "${cliente.descricao}"></td>
+				<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
+				<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>	
+
+</body>
+</html>
