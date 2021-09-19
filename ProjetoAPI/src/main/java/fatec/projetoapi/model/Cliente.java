@@ -12,7 +12,7 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(nullable = false, unique = true, length = 45)
+	@Column(name = "email", nullable = false, length = 45)
 	private String email;
 
 	@Column(name = "nome", nullable = false, length = 20)
@@ -26,6 +26,9 @@ public class Cliente {
 
 	@Column(name = "telefone", nullable = false, length = 20)
 	private String telefone;
+	
+	@Column(name = "descricao", nullable = false, length = 200)
+	private String descricao;
 
 	public Long getId() {
 		return id;
@@ -73,6 +76,14 @@ public class Cliente {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+	
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
 	
