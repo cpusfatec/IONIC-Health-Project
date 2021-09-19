@@ -13,7 +13,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________________________________________________
 # Cronograma e Sprints ⏰:
 Sprint é um termo utilizado na metodologia Scrum, um dos pilares do projeto em desenvolvimento, consiste em cada uma das etapas do projeto, determinadas em espaços específicos de tempo onde são alocados alguns trabalhos que devem ser executados até o término do projeto, priorizando sempre os trabalhos essenciais nas primeiras sprints. Após a conclusão de cada sprint, um novo sprint se inicia. Cada sprint geralmente dura de uma a três semanas.
-- [ ] Sprint 1 - 30/08/2021 a 19/09/2021 - [_ver detalhes..._]()
+- [X] Sprint 1 - 30/08/2021 a 19/09/2021 - [_ver detalhes..._]()
 - [ ] Sprint 2 - 20/09/2021 a 10/10/2021 - [_ver detalhes..._]()
 - [ ] Sprint 3 - 18/10/2021 a 07/11/2021 - [_ver detalhes..._]()
 - [ ] Sprint 4 - 08/11/2021 a 28/11/2021 - [_ver detalhes..._]()
@@ -48,13 +48,13 @@ ________________________________________________________________________________
 - ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/alira1984) | 📧: anderson.lira2@fatec.sp.gov.br
 
 #### :mortar_board: Andre Silva - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_]() | 📧: andre.silva@fatec.sp.gov.br
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/andr%C3%A9-silva-63a4621ba/) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/AndreSilva358) | 📧: andre.silva@fatec.sp.gov.br
 
 #### :mortar_board: Danilo - Time de Desenvolvimento
 - ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Danilo2010) | 📧: danilofatecsjc@gmail.com
 
 #### :mortar_board: Jean Gomes - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/jeangomes3) | 📧: 
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/jean-santos-562b74200/) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/jeangomes3) | 📧: jean.santos27@fatec.sp.gov.br
 
 #### :mortar_board: Levi - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_]() | 📧: 
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/levizoca) | 📧: 
