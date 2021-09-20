@@ -42,19 +42,31 @@ ________________________________________________________________________________
 # Equipe 👥:
 
 #### :mortar_board: Higor dos Santos Mariano - Product Owner
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Higor-SM) | ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): higor.mariano@fatec.sp.gov.br
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Higor-SM) | 
+- ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): higor.mariano@fatec.sp.gov.br |
 
 #### :mortar_board: Anderson Lira - Scrum Master
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/alira1984) | ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): anderson.lira2@fatec.sp.gov.br
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/alira1984) | 
+- ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): anderson.lira2@fatec.sp.gov.br |
 
 #### :mortar_board: Andre Silva - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/andr%C3%A9-silva-63a4621ba/) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/AndreSilva358) | ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): andre.silva@fatec.sp.gov.br
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/andr%C3%A9-silva-63a4621ba/) | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/AndreSilva358) | 
+- ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): andre.silva@fatec.sp.gov.br |
 
 #### :mortar_board: Danilo - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Danilo2010) | ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white): danilofatecsjc@gmail.com
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_]() | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/Danilo2010) | 
+- ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white): danilofatecsjc@gmail.com |
 
 #### :mortar_board: Jean Gomes - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/jean-santos-562b74200/) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/jeangomes3) | ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): jean.santos27@fatec.sp.gov.br
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/jean-santos-562b74200/) | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/jeangomes3) | 
+- ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): jean.santos27@fatec.sp.gov.br |
 
 #### :mortar_board: Levi - Time de Desenvolvimento
-- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/levi-motta-5001a2173/) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/levizoca) | ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): levi.santos9@fatec.sp.gov.br 
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white): [_meu Linkedin_](https://www.linkedin.com/in/levi-motta-5001a2173/) | 
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white): [_meu Git_](https://github.com/levizoca) | 
+- ![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white): levi.santos9@fatec.sp.gov.br |
