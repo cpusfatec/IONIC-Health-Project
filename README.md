@@ -18,12 +18,13 @@ Gif do projeto rodando:
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
+## Card:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/CARD%20SPRINT%201.png)
+
+___________________________________________________________________________________________________________________________________________________________________________________
+
 # Burndown do Projeto 📉:
 O Burndown chart ou gráfico de Burndown é o gráfico utilizado pelas equipes Scrum para representar o progresso do trabalho em desenvolvimento. Ou seja, após cada dia de trabalho o gráfico apresenta a porção de trabalho finalizada em comparação com o trabalho total planejado. Abaixo você confere o Burndown do projeto até o presente momento:
 
 ## Burndown da sprint 1:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/BURNDOWN%20SPRINT%201.png)
-
-
-
-
