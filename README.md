@@ -13,6 +13,8 @@ ________________________________________________________________________________
 ## Template 📋:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/GIF_Ionic.gif)
 
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/ProjetoSprint1.png)
+
 ___________________________________________________________________________________________________________________________________________________________________________________
 
 # Burndown do Projeto 📉:
