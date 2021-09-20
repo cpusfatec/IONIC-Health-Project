@@ -40,7 +40,7 @@ O Burndown chart ou gráfico de Burndown é o gráfico utilizado pelas equipes S
 ___________________________________________________________________________________________________________________________________________________________________________________
 
 # Casos de Uso:
-![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/Casos de uso.jpeg)
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/WhatsApp Image 2021-09-19 at 18.01.04.jpeg)
 
 
 # Equipe 👥:
