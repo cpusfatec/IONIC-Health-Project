@@ -6,6 +6,8 @@ ________________________________________________________________________________
 ## Template 📋:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/GIF_Ionic.gif)
 
+## Projeto:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/ProjetoSprint1.gif)
 ___________________________________________________________________________________________________________________________________________________________________________________
 # Metodologia 📂:
 [SCRUM](https://www.desenvolvimentoagil.com.br/scrum/)
