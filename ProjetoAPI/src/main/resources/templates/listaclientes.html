@@ -2,17 +2,31 @@
 <html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>Listas de clientes</title>
 </head>
 <body>
+
+
 
 <div class="container">
 <h1>Lista de clientes</h1><br>
 <a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
 <a class="btn btn-primary" href="/cadastrocliente" role="button">Cadastro de Clientes</a><br><br>
-	<table class="table table-striped" style="background-color: white; border-radius:40px; border:none;">
+
+<div class="form-group input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+	<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+</div>
+
+	<table id="tabela" class="table table-striped" style="background-color: white; border-radius:40px; border:none;">
 		<thead class="thead-dark">
+		
+		
 			<tr>
 				<th>ID</th>
 				<th>Email</th>
@@ -37,9 +51,14 @@
 				<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
 				<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
 			</tr>
+	
 		</tbody>
 	</table>
-</div>	
+	
+	<script>
+            $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+        </script>
+</div>
 
 </body>
 </html>
