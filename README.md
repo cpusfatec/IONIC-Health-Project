@@ -1,9 +1,9 @@
 # IONIC-Health-Project
-## Projeto 🖥️: 
+# Projeto 💡: 
  Criação de um CRM de fácil visualização que armazene informações de clientes atuais/potenciais e entregue relatórios.
 
 ___________________________________________________________________________________________________________________________________________________________________________________
-# Projeto rodando:
+# Projeto rodando 🖥️:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/ProjetoSprint1.gif)
 ___________________________________________________________________________________________________________________________________________________________________________________
 # Metodologia 📂:
