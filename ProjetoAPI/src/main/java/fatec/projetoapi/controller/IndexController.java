@@ -21,6 +21,11 @@ public class IndexController {
 		return "import";
 	}
 	
+	@RequestMapping("/pipeline")
+	public String pipeline( ) {
+		return "pipeline";
+	}
+	
 	
 	
 }
