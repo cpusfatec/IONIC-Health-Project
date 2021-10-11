@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta charset="utf-8">
+<title>Listas de clientes</title>
+</head>
+<style>
+.body{
+	background-color: #A9A9A9;
+}
+</style>
+<body class="body">
+
+
+
+
+
+<div class="container">
+<h1>Lista de clientes</h1><br>
+<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
+<a class="btn btn-primary" href="/selecionarcadastro" role="button">Cadastro de Clientes</a><br><br>
+
+<h3>Lista de clientes B2C</h3>
+<div class="form-group input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+	<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+</div>
+	<table id="tabela" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>CRM</th>
+				<th>Email</th>
+				<th>CPF</th>
+				<th>Telefone</th>
+				<th>Especialidade</th>
+				<th>Produto</th>
+				<th>Status</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="cliente : ${clientes}">
+				<td th:text = "${cliente.id}"></td>
+				<td th:text = "${cliente.nome}"></td>
+				<td th:text = "${cliente.crm}"></td>
+				<td th:text = "${cliente.email}"></td>
+				<td th:text = "${cliente.cpf}"></td>
+				<td th:text = "${cliente.telefone}"></td>
+				<td th:text = "${cliente.especialidade}"></td>
+				<td th:text = "${cliente.produto}"></td>
+				<td th:text = "${cliente.status}"></td>
+				<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
+				<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<script>
+   		$('input#txt_consulta').quicksearch('table#tabela tbody tr');
+    </script>
+	<br><br><br>
+	
+	<h3>Lista de clientes B2B</h3>
+	<div class="form-group input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+		<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+	</div>
+	<table id="tabela2" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Categoria</th>
+				<th>Razão Social</th>
+				<th>CNPJ</th>
+				<th>Endereço</th>
+				<th>Contato</th>
+				<th>Email</th>
+				<th>Produto</th>
+				<th>Status</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="clienteb2b : ${clientesb2b}">
+				<td th:text = "${clienteb2b.id}"></td>
+				<td th:text = "${clienteb2b.categoria}"></td>
+				<td th:text = "${clienteb2b.razaosocial}"></td>
+				<td th:text = "${clienteb2b.cnpj}"></td>
+				<td th:text = "${clienteb2b.endereco}"></td>
+				<td th:text = "${clienteb2b.contato}"></td>
+				<td th:text = "${clienteb2b.email}"></td>
+				<td th:text = "${clienteb2b.produto}"></td>
+				<td th:text = "${clienteb2b.status}"></td>
+				<td><a th:href="@{/editarclienteB2B/{id}(id=${clienteb2b.id})}">Editar</a></td>
+				<td><a th:href="@{/deletarclienteB2B/{id}(id=${clienteb2b.id})}">Deletar</a></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<script>
+   		$('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
+    </script>
+</div>
+
+</body>
+</html>
