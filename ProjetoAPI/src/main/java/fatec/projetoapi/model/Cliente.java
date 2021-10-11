@@ -18,8 +18,8 @@ public class Cliente {
 	@Column(name = "nome", nullable = false, length = 20)
 	private String nome;
 
-	@Column(name = "sobrenome", nullable = false, length = 20)
-	private String sobrenome;
+	@Column(name = "crm", nullable = false, length = 20)
+	private String crm;
 
 	@Column(name = "cpf", nullable = false, length = 12)
 	private double cpf;
@@ -27,8 +27,11 @@ public class Cliente {
 	@Column(name = "telefone", nullable = false, length = 20)
 	private String telefone;
 	
-	@Column(name = "descricao", nullable = false, length = 200)
-	private String descricao;
+	@Column(name = "especialidade", nullable = false, length = 200)
+	private String especialidade;
+	
+	@Column(name = "produto", nullable = false, length = 200)
+	private String produto;
 
 	public Long getId() {
 		return id;
@@ -54,12 +57,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getSobrenome() {
-		return sobrenome;
+	public String getCrm() {
+		return crm;
 	}
 
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
+	public void setCrm(String crm) {
+		this.crm = crm;
 	}
 
 	public double getCpf() {
@@ -78,12 +81,20 @@ public class Cliente {
 		this.telefone = telefone;
 	}
 	
-	public String getDescricao() {
-		return descricao;
+	public String getEspecialidade() {
+		return especialidade;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+	
+	public String getProduto() {
+		return produto;
+	}
+
+	public void setProduto(String produto) {
+		this.produto = produto;
 	}
 	
 	

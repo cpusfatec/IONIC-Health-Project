@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import fatec.projetoapi.model.Cliente;
+import fatec.projetoapi.model.ClienteB2B;
+import fatec.projetoapi.repository.ClienteB2BRepository;
 import fatec.projetoapi.repository.ClienteRepository;
 
 
@@ -21,9 +23,22 @@ public class ClienteController {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	@GetMapping("/cadastrocliente")
-	public String inicio() {
-		return "cadastro/cadastrocliente";
+	@Autowired
+	private ClienteB2BRepository clienteb2bRepository;
+	
+	@GetMapping("/B2B")
+	public String cadastroclienteB2B() {
+		return "cadastro/cadastroclienteB2B";
+	}
+	
+	@GetMapping("/B2C")
+	public String cadastroclienteB2C() {
+		return "cadastro/cadastroclienteB2C";
+	}
+	
+	@GetMapping("/selecionarcadastro")
+	public String selecionarcadastrocio() {
+		return "cadastro/selecionarcadastro";
 	}
 	
 	@GetMapping("/salvarcliente")
@@ -37,12 +52,27 @@ public class ClienteController {
 		return andView;
 	}
 	
+	@GetMapping("/salvarclienteb2b")
+	public ModelAndView salvar(ClienteB2B clienteb2b) {
+		
+			clienteb2bRepository.save(clienteb2b);
+			ModelAndView andView = new ModelAndView("cadastro/cadastroclienteB2B");
+			Iterable<ClienteB2B> clientesb2bIt = clienteb2bRepository.findAll();
+			andView.addObject("clientesb2b", clientesb2bIt);
+			
+		return andView;
+	}
+	
 	@GetMapping("/listaclientes")
 	public ModelAndView clientes() {
 		
 		ModelAndView andView = new ModelAndView("listaclientes");
 		Iterable<Cliente> clientesIt = clienteRepository.findAll();
 		andView.addObject("clientes", clientesIt);
+		
+		Iterable<ClienteB2B> clientesb2bIt = clienteb2bRepository.findAll();
+		andView.addObject("clientesb2b", clientesb2bIt);
+		
 		return andView;
 	}
 	
@@ -63,6 +93,14 @@ public class ClienteController {
 		return "cadastro/editarcliente";
 	}
 	
+	@GetMapping("/editarclienteB2B/{id}")
+	public String editarclienteb2b(@PathVariable(value = "id") long id, Model model) {
+
+		ClienteB2B clienteb2b = clienteb2bRepository.getOne(id);
+		model.addAttribute("clienteb2b", clienteb2b);
+		return "cadastro/editarclienteB2B";
+	}
+	
 	@PostMapping("/salvarcliente")
 	public String salvarcliente(@ModelAttribute("cliente") Cliente cliente) {
 		
@@ -70,10 +108,25 @@ public class ClienteController {
 		return "redirect:/listaclientes";
 	}
 	
+	@PostMapping("/salvarclienteb2b")
+	public String salvarclienteb2b(@ModelAttribute("clienteb2b") ClienteB2B clienteb2b) {
+		
+		clienteb2bRepository.save(clienteb2b);
+		return "redirect:/listaclientes";
+	}
+	
 	@GetMapping("/deletarcliente/{id}")
 	public String deletarcliente(@PathVariable(value = "id") long id) {
 
 		this.clienteRepository.deleteById(id);
+		return "redirect:/listaclientes";
+
+	}
+	
+	@GetMapping("/deletarclienteB2B/{id}")
+	public String deletarclienteb2b(@PathVariable(value = "id") long id) {
+
+		this.clienteb2bRepository.deleteById(id);
 		return "redirect:/listaclientes";
 
 	}

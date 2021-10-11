@@ -16,4 +16,11 @@ public class IndexController {
 		return "login";
 	}
 	
+	@RequestMapping("/import")
+	public String Import( ) {
+		return "import";
+	}
+	
+	
+	
 }

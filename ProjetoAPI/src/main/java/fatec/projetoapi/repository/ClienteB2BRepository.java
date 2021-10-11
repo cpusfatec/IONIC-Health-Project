@@ -4,10 +4,10 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import fatec.projetoapi.model.Cliente;
+import fatec.projetoapi.model.ClienteB2B;
 
 @Repository
 @Transactional
-public interface ClienteRepository extends CrudRepository<Cliente, Long> {
-	Cliente getOne(long id);
+public interface ClienteB2BRepository extends CrudRepository<ClienteB2B, Long> {
+	ClienteB2B getOne(long id);
 }

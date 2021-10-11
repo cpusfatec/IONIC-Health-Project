@@ -6,27 +6,33 @@
 <title>Cadastro Cliente</title>
 </head>
 <style>
+
+.body{
+	background-color: #A9A9A9;
+}
 .container { 
     text-align: center; 
 }
 </style>
-<body>
+<body class="body">
 <div class="container">
-<h1>Cadastro de clientes</h1>
+<h1>Cadastro de clientes B2C</h1>
 
 	<form action="salvarcliente" method="post">
 		<label>Nome</label>
 		<input name="nome"><br><br>
-		<label>Sobrenome</label>
-		<input name="sobrenome"><br><br>
+		<label>CRM</label>
+		<input name="crm"><br><br>
 		<label>Email</label>
-		<input name="email"><br><br>
+		<input name="email" required><br><br>
 		<label>CPF</label>
 		<input name="cpf"><br><br>
 		<label>Telefone</label>
 		<input name="telefone"><br><br>
-		<label>Descrição</label>
-		<input name="descricao"><br><br>
+		<label>Especialidade</label>
+		<input name="especialidade"><br><br>
+		<label>Produto</label>
+		<input name="produto"><br><br>
 		<input class="btn btn-primary" type="submit" value="Salvar">
 	</form><br><br>
 	
