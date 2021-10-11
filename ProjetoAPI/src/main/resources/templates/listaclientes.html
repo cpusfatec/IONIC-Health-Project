@@ -41,6 +41,7 @@
 				<th>Telefone</th>
 				<th>Especialidade</th>
 				<th>Produto</th>
+				<th>Status</th>
 				<th></th>
 				<th></th>
 			</tr>
@@ -55,11 +56,15 @@
 				<td th:text = "${cliente.telefone}"></td>
 				<td th:text = "${cliente.especialidade}"></td>
 				<td th:text = "${cliente.produto}"></td>
+				<td th:text = "${cliente.status}"></td>
 				<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
 				<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
 			</tr>
 		</tbody>
 	</table>
+	<script>
+   		$('input#txt_consulta').quicksearch('table#tabela tbody tr');
+    </script>
 	<br><br><br>
 	
 	<h3>Lista de clientes B2B</h3>
@@ -78,6 +83,7 @@
 				<th>Contato</th>
 				<th>Email</th>
 				<th>Produto</th>
+				<th>Status</th>
 				<th></th>
 				<th></th>
 			</tr>
@@ -92,6 +98,7 @@
 				<td th:text = "${clienteb2b.contato}"></td>
 				<td th:text = "${clienteb2b.email}"></td>
 				<td th:text = "${clienteb2b.produto}"></td>
+				<td th:text = "${clienteb2b.status}"></td>
 				<td><a th:href="@{/editarclienteB2B/{id}(id=${clienteb2b.id})}">Editar</a></td>
 				<td><a th:href="@{/deletarclienteB2B/{id}(id=${clienteb2b.id})}">Deletar</a></td>
 			</tr>

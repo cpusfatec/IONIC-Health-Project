@@ -32,6 +32,9 @@ public class Cliente {
 	
 	@Column(name = "produto", nullable = false, length = 200)
 	private String produto;
+	
+	@Column(name = "status", nullable = false, length = 200)
+	private String status;
 
 	public Long getId() {
 		return id;
@@ -95,6 +98,14 @@ public class Cliente {
 
 	public void setProduto(String produto) {
 		this.produto = produto;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 	

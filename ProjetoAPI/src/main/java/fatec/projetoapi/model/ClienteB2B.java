@@ -32,6 +32,9 @@ public class ClienteB2B {
 	
 	@Column(name = "produto", nullable = false, length = 200)
 	private String produto;
+	
+	@Column(name = "status", nullable = false, length = 200)
+	private String status;
 
 	public Long getId() {
 		return id;
@@ -96,6 +99,15 @@ public class ClienteB2B {
 	public void setProduto(String produto) {
 		this.produto = produto;
 	}
+	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
 	
 	
 }
