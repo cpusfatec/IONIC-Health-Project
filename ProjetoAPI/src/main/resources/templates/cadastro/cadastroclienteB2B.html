@@ -1,45 +1,165 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<head>
 <meta charset="utf-8">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #54C5CE;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+
+
 <title>Cadastro Cliente</title>
 </head>
 <style>
-
 .body{
-	background-color: #A9A9A9;
+	background-color:  #A9A9A9;
 }
 .container { 
     text-align: center; 
 }
 </style>
 <body class="body">
+
+<div class="header">
+  <h1>IONIC HEALTH CRM </h1>
+  <p>Módulo Vendas</p>
+</div>
+
+<div class="topnav">
+  <a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  <a href="/listaclientes" role="button">Lista de clientes</a>
+  <a href="/pipeline" role="button">Pipeline</a>
+  <a href="/import" role="button">Importação de arquivos</a>
+  <a href="/logout" style="float:right" role="button">Logout</a>
+  <a href="/login" style="float:right" role="button">Login</a>
+</div>
+
+
 <div class="container">
 <h1>Cadastro de clientes B2B</h1>
 
 	<form action="salvarclienteb2b" method="post">
 		<label>Categoria</label>
-		<input name="categoria"><br><br>
+		<input class="btn btn-light" name="categoria" placeholder="Username"><br><br>
 		<label>Razão Social</label>
-		<input name="razaosocial"><br><br>
+		<input class="btn btn-light" name="razaosocial"><br><br>
 		<label>CNPJ</label>
-		<input name="cnpj" required><br><br>
+		<input class="btn btn-light" name="cnpj" required><br><br>
 		<label>Endereço</label>
-		<input name="endereco"><br><br>
+		<input class="btn btn-light" name="endereco"><br><br>
 		<label>Contato</label>
-		<input name="contato"><br><br>
+		<input class="btn btn-light" name="contato"><br><br>
 		<label>Email</label>
-		<input name="email"><br><br>
+		<input class="btn btn-light" name="email"><br><br>
 		<label>Produto</label>
-		<input name="produto"><br><br>
+		<input class="btn btn-light" name="produto"><br><br>
 		<label>Status</label>
-		<input name="status"><br><br>
-		<input class="btn btn-primary" type="submit" value="Salvar">
+		<input class="btn btn-light" name="status"><br><br>
+		<input class="btn btn-light" type="submit" value="Salvar">
 	</form><br><br>
 	
-	<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
-	<a class="btn btn-primary" href="/listaclientes" role="button">Lista de clientes</a><br><br>
+	<a class="btn btn-light" href="/listaclientes" role="button">Lista de clientes</a><br><br>
+	<a class="btn btn-outline-light" href="/" role="button">Pagina inicial</a><br><br>
 	
 </div>
 </body>

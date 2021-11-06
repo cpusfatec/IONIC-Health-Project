@@ -9,6 +9,110 @@
 <title>Importação de arquivos</title>
 </head>
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #54C5CE;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+
+<style>
 
 .body{
 	background-color: #A9A9A9;
@@ -18,9 +122,24 @@
 }
 </style>
 <body class="body">
+<div class="header">
+  <h1>IONIC HEALTH CRM </h1>
+  <p>Módulo Vendas</p>
+</div>
+
+<div class="topnav">
+  <a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  <a href="/listaclientes" role="button">Lista de clientes</a>
+  <a href="/pipeline" role="button">Pipeline</a>
+  <a href="/import" role="button">Importação de arquivos</a>
+  <a href="/logout" style="float:right" role="button">Logout</a>
+  <a href="/login" style="float:right" role="button">Login</a>
+</div>
+
+
 <div class="container">			
 	<h1>Importação de arquivos</h1><br>
-	<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
+	
 	<h3>Fazer upload</h3>
 	<form th:action="@{/UploadFile}" method="POST"
 		enctype="multipart/form-data" >
@@ -33,7 +152,8 @@
 	<form th:action="@{/DownloadFile}" method="GET" >
 		<input type="text"  class="form-group col-md-4" name="document" placeholder="Nome do documento"/><br><br>
 		<input type="submit" class="btn btn-primary" value="Baixar Arquivo"><br>
-	</form>
+	</form><br>
+	<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
 </div>
 </body>
 </html>
