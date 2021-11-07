@@ -14,16 +14,20 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
+  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
+  text-align: center;
 }
 
 /* Header/Blog Title */
 .header {
+  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
   padding: 10px;
   text-align: center;
-  background: #54C5CE;
+  
+}
+
+.container {
+  text-align: center;
 }
 
 .header h1 {
@@ -33,7 +37,7 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #ddd;
+  background-color: rgb(186, 189, 194);
 }
 
 /* Style the topnav links */
@@ -48,7 +52,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: white;
+  background-color: rgb(152, 163, 168);
   color: black;
 }
 
@@ -110,17 +114,6 @@ body {
   }
 }
 </style>
-
-
-<style>
-
-.body{
-	background-color: #A9A9A9;
-}
-.container { 
-    text-align: center; 
-}
-</style>
 <body class="body">
 <div class="header">
   <h1>IONIC HEALTH CRM </h1>
@@ -128,32 +121,39 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
-  <a href="/listaclientes" role="button">Lista de clientes</a>
-  <a href="/pipeline" role="button">Pipeline</a>
-  <a href="/import" role="button">Importação de arquivos</a>
-  <a href="/logout" style="float:right" role="button">Logout</a>
-  <a href="/login" style="float:right" role="button">Login</a>
+	<a href="/" role="button">Home</a>
+  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  	<a href="/listaclientes" role="button">Lista de clientes</a>
+  	<a href="/pipeline" role="button">Pipeline</a>
+  	<a href="/import" role="button">Importação de arquivos</a>
+  	<a href="/logout" style="float:right" role="button">Logout</a>
+  	<a href="/login" style="float:right" role="button">Login</a>
 </div>
 
 
-<div class="container">			
+<div class="container">	
+	<br>
+	<br>
+	<div class="import">
+	<div class="up">
 	<h1>Importação de arquivos</h1><br>
 	
 	<h3>Fazer upload</h3>
 	<form th:action="@{/UploadFile}" method="POST"
 		enctype="multipart/form-data" >
 		<input type="file" name="files" multiple /><br/> <br/><input
-			type="submit" class="btn btn-primary" value="Subir Arquivo">
+			type="submit" class="btn btn-light" value="Subir Arquivo">
 		<br>
 	</form><br><br>
-	
+	</div>
+	<div class="down">
 	<h3>Fazer download</h3>
 	<form th:action="@{/DownloadFile}" method="GET" >
 		<input type="text"  class="form-group col-md-4" name="document" placeholder="Nome do documento"/><br><br>
-		<input type="submit" class="btn btn-primary" value="Baixar Arquivo"><br>
+		<input type="submit" class="btn btn-light" value="Baixar Arquivo"><br>
 	</form><br>
-	<a class="btn btn-primary" href="/" role="button">Pagina inicial</a><br><br>
+	</div>
+	</div>
 </div>
 </body>
 </html>

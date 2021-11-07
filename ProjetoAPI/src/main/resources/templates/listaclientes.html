@@ -15,16 +15,20 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
+  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
+  text-align: center;
 }
 
 /* Header/Blog Title */
 .header {
+  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
   padding: 10px;
   text-align: center;
-  background: #54C5CE;
+  
+}
+
+.container {
+  text-align: center;
 }
 
 .header h1 {
@@ -34,7 +38,7 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #ddd;
+  background-color: rgb(186, 189, 194);
 }
 
 /* Style the topnav links */
@@ -49,7 +53,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: white;
+  background-color: rgb(152, 163, 168);
   color: black;
 }
 
@@ -113,29 +117,20 @@ body {
 </style>
 
 
-<style>
-.body{
-	background-color: #C0C0C0;
-}
-.titulo{
-	text-align: center;
-	padding:10px;
-}
-</style>
-<body class="titulo">
-
+<body>
 <div class="header">
   <h1>IONIC HEALTH CRM </h1>
   <p>Módulo Vendas</p>
 </div>
 
 <div class="topnav">
-  <a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
-  <a href="/listaclientes" role="button">Lista de clientes</a>
-  <a href="/pipeline" role="button">Pipeline</a>
-  <a href="/import" role="button">Importação de arquivos</a>
-  <a href="/logout" style="float:right" role="button">Logout</a>
-  <a href="/login" style="float:right" role="button">Login</a>
+	<a href="/" role="button">Home</a>
+  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  	<a href="/listaclientes" role="button">Lista de clientes</a>
+  	<a href="/pipeline" role="button">Pipeline</a>
+  	<a href="/import" role="button">Importação de arquivos</a>
+  	<a href="/logout" style="float:right" role="button">Logout</a>
+  	<a href="/login" style="float:right" role="button">Login</a>
 </div>
 
 
@@ -228,8 +223,6 @@ body {
    		$('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
     </script>
     
-    <a class="btn btn-primary" href="/selecionarcadastro" role="button">Cadastro de Clientes</a><br><br>
-    <a class="btn btn-outline-primary" href="/" role="button">Pagina inicial</a><br><br>
 </div>
 
 </body>

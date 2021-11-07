@@ -5,22 +5,26 @@
 <meta charset="utf-8">
 <title>Cadastro Cliente</title>
 </head>
+
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
+  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
 }
 
 /* Header/Blog Title */
 .header {
+  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
   padding: 10px;
   text-align: center;
-  background: #54C5CE;
+  
+}
+
+.container {
+  text-align: center;
 }
 
 .header h1 {
@@ -30,7 +34,7 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #ddd;
+  background-color: rgb(186, 189, 194);
 }
 
 /* Style the topnav links */
@@ -45,7 +49,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: white;
+  background-color: rgb(152, 163, 168);
   color: black;
 }
 
@@ -106,61 +110,68 @@ body {
     width: 100%;
   }
 }
+
+form,
+label {
+  display: block;
+  padding: 10px;
+}
+form {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+label {
+  color: #FFF;
+  text-align: center;
+}
+input {
+  display: inline-block;
+  padding-left: 10px;
+}
 </style>
 
-<style>
 
-.body{
-	background-color: #A9A9A9;
-}
-.container { 
-    text-align: center; 
-    
-    
-    
-}
-</style>
-<body class="body">
-
+<body>
 <div class="header">
   <h1>IONIC HEALTH CRM </h1>
   <p>Módulo Vendas</p>
 </div>
 
 <div class="topnav">
-  <a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
-  <a href="/listaclientes" role="button">Lista de clientes</a>
-  <a href="/pipeline" role="button">Pipeline</a>
-  <a href="/import" role="button">Importação de arquivos</a>
-  <a href="/logout" style="float:right" role="button">Logout</a>
-  <a href="/login" style="float:right" role="button">Login</a>
+	<a href="/" role="button">Home</a>
+  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  	<a href="/listaclientes" role="button">Lista de clientes</a>
+  	<a href="/pipeline" role="button">Pipeline</a>
+  	<a href="/import" role="button">Importação de arquivos</a>
+  	<a href="/logout" style="float:right" role="button">Logout</a>
+  	<a href="/login" style="float:right" role="button">Login</a>
 </div>
 
 <div class="container">
+<br>
 <h1>Cadastro de clientes B2C</h1>
-
+<br>
 	<form action="salvarcliente" method="post">
-		<label>Nome</label>
-		<input type="text" class="btn btn-light" name="nome" placeholder="Digite seu nome"><br><br>
-		<label>CRM</label>
-		<input class="btn btn-light" name="crm" placeholder="Digite o número do CRM"><br><br>
-		<label>Email</label>
-		<input type="email"class="btn btn-light" name="email" required placeholder="Digite E-mail"><br><br>
-		<label>CPF</label>
-		<input class="btn btn-light" name="cpf" placeholder="Digite número CPF"><br><br>
-		<label>Telefone</label>
-		<input class="btn btn-light" name="telefone"><br><br>
-		<label>Especialidade</label>
-		<input class="btn btn-light" name="especialidade"><br><br>
-		<label>Produto</label>
-		<input class="btn btn-light" name="produto"><br><br>
-		<label>Status</label>
-		<input class="btn btn-light" name="status"><br><br>
+		<label>Nome:</label>
+		<input class="btn btn-light" type="text" name="nome" placeholder="Digite o nome"><br><br>
+		<label>CRM:</label>
+		<input class="btn btn-light" type="text" name="crm" placeholder="Digite o número do CRM"><br><br>
+		<label>Email:</label>
+		<input class="btn btn-light" type="email" name="email" required placeholder="Digite o E-mail"><br><br>
+		<label>CPF:</label>
+		<input class="btn btn-light" type="number" name="cpf" placeholder="Digite o número CPF"><br><br>
+		<label>Telefone:</label>
+		<input class="btn btn-light" type="number" name="telefone" placeholder="Digite o telefone">><br><br>
+		<label>Especialidade:</label>
+		<input class="btn btn-light" type="text" name="especialidade" placeholder="Digite a especialidade">><br><br>
+		<label>Produto:</label>
+		<input class="btn btn-light" type="text" name="produto" placeholder="Digite o produto"><br><br>
+		<label>Status:</label>
+		<input class="btn btn-light" type="text" name="status" placeholder="Digite o Status">><br><br><br>
 		<input class="btn btn-light" type="submit" value="Salvar">
 	</form><br><br>
-	
-	<a class="btn btn-light" href="/listaclientes" role="button">Lista de clientes</a><br><br>
-	<a class="btn btn-outline-light" href="/" role="button">Pagina inicial</a><br><br>
+
 </div>
 </body>
 </html>
