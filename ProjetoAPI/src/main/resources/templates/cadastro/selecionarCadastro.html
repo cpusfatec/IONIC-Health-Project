@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.or/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<head>
+<meta charset="utf-8">
+<title>Cadastro Cliente</title>
+</head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
+  text-align: center;
+}
+
+/* Header/Blog Title */
+.header {
+  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.container {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(186, 189, 194);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(152, 163, 168);
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+
+<body>
+<div class="header">
+  <h1>IONIC HEALTH CRM </h1>
+  <p>Módulo Vendas</p>
+</div>
+
+<div class="topnav">
+	<a href="/" role="button">Home</a>
+  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
+  	<a href="/listaclientes" role="button">Lista de clientes</a>
+  	<a href="/pipeline" role="button">Pipeline</a>
+  	<a href="/import" role="button">Importação de arquivos</a>
+  	<a href="/logout" style="float:right" role="button">Logout</a>
+  	<a href="/login" style="float:right" role="button">Login</a>
+</div>
+
+<div>
+	<br>
+	<br>
+ 	<h1>Selecione o tipo de cliente</h1><br>
+	<a class="btn btn-light" href="/B2C" role="button">Cadastrar cliente B2C</a><br><br>
+	<a class="btn btn-light" href="/B2B" role="button">Cadastrar cliente B2B</a><br><br>
+</div>
+</body>
+</html>
