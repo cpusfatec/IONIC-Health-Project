@@ -15,6 +15,12 @@ ________________________________________________________________________________
 ## Gif do pipeline e download de relatórios:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/GIF%20RELATORIOS%20SPRINT%203.gif)
 
+## Img demonstrativa do download por XLS:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/PIPE%20EM%20XLS%20SPRINT%203.png)
+
+## Img demonstrativa do download por PNG:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/PIPE%20EM%20PNG%20SPRINT%203.png)
+
 ___________________________________________________________________________________________________________________________________________________________________________________
 
 ## Card:
