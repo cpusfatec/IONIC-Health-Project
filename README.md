@@ -10,16 +10,28 @@ ________________________________________________________________________________
   
 ___________________________________________________________________________________________________________________________________________________________________________________
 
-# Gif do projeto rodando:
+# Gif's e Visual do projeto rodando:
 
 ## Gif do pipeline e download de relatórios:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/GIF%20RELATORIOS%20SPRINT%203.gif)
 
-## Img demonstrativa do download por XLS:
+## Imagem do download por XLS:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/PIPE%20EM%20XLS%20SPRINT%203.png)
 
-## Img demonstrativa do download por PNG:
+## Imagem do download por PNG:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/PIPE%20EM%20PNG%20SPRINT%203.png)
+
+## Imagem página Home:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20HOME.png)
+
+## Imagem página Cadastro:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20CADASTRO.png)
+
+## Imagem página Lista de Clientes:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20LISTA.png)
+
+## Imagem página Importação de Arquivos:
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20IMPORTAÇÃO.png)
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
