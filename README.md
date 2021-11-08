@@ -30,6 +30,9 @@ ________________________________________________________________________________
 ## Imagem página Lista de Clientes:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20LISTA.png)
 
+## Imagem página Pipeline
+![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20PIPE.png)
+
 ## Imagem página Importação de Arquivos:
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/VISUAL%20IMPORTAÇÃO.png)
 
