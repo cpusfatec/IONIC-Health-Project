@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetoApplication<projeto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "fatec.projetoapi.ProjetoApplication",
+            "projectName": "projeto",
+            "args": ""
+        }
+    ]
+}
