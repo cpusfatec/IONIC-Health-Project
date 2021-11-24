@@ -6,6 +6,7 @@
 <title>Editar cadastros</title>
 </head>
 <style>
+<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
 }
@@ -147,10 +148,107 @@ input {
   	<a href="/logout" style="float:right" role="button">Logout</a>
   	<a href="/login" style="float:right" role="button">Login</a>
 </div>
+=======
+  *{
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+  }
+  .banner{
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(to top right, rgb(26, 26, 141), rgb(114, 114, 114));
+      background-size: cover;
+      background-position: center;
+  }
+  .topnav{
+      background-color: rgba(0, 0, 0, 0.089);
+      width: 100%;
+      margin: auto;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .topnav ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+  }
+  .topnav ul li a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+  }
+  .topnav ul li a:hover{
+      color: #2985ff;
+  }
+  button{
+      color: #fbfcfd;
+      padding: 10px 25px;
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+  }
+  button:hover{
+      color: #2985ff;
+      border: 1px solid #2985ff;
+  }
+  h2{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: coolvetica,sans-serif;
+      color: #f2f2f2;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+  }
+  body{
+    text-align: center;
+  }
+  .container{
+    text-align: center;
+  }
+  h1{
+    font-size: 40px;
+    color: #fff;
+  }
+  h3{
+    font-size: 20px;
+    color: #fff;
+  }
+  .container {
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 30px;
+  }
+  </style>
+  <body>
+  <div class="banner" >
+    <div class="topnav">
+        <h2>ㅤIONIC Health Project</h2>
+        <ul>
+          <li><a href="/" role="button">Home</a></li>
+          <li><a href="/selecionarcadastro" role="button">Cadastro de Clientes</a></li>
+          <li><a href="/listaclientes" role="button">Lista de clientes</a></li>
+          <li><a href="/pipeline" role="button">Pipeline</a></li>
+          <li><a href="/import" role="button">Importação de arquivos</a></li>
+          <li><a href="/login" role="button">Login</a></li>
+          <li><a href="/logout" role="button">Logout</a></li>
+        </ul>
+    </div>
+>>>>>>> Stashed changes
 <br>
 <div class="container">
 <h1>Editar cadastros</h1>
 <br>
+<<<<<<< Updated upstream
 	<form th:action="@{/salvarclienteb2b}" th:object="${clienteb2b}"
 			method="post" >
 			
@@ -181,6 +279,44 @@ input {
 			<input class="btn btn-light" name="status" th:field="*{status}" placeholder="Status"><br><br>
 					
 			<input class="btn btn-light" type="submit" value="Salvar">
+=======
+	<form th:action="@{/salvarclienteb2b}" th:object="${clienteb2b}" class="row g-3" method="post" >
+	<input type="hidden" th:name="id" th:value="${clienteb2b.id}" >
+	<div class="col-md-6">
+    <label>Categoria</label>
+    <input class="form-control" type="text" th:field="*{categoria}" name="categoria" placeholder="Categoria">
+  </div>			
+  <div class="col-md-6">
+    <label>Razão Social</label>
+    <input class="form-control" type="text" th:field="*{razaosocial}" name="razaosocial" placeholder="Razão Social">
+  </div>     
+  <div class="col-12">
+    <label>Email</label>
+    <input class="form-control" type="email" th:field="*{email}" name="email" placeholder="Digite seu Email">
+  </div>      
+  <div class="col-md-6">
+    <label>CNPJ</label>
+    <input class="form-control" type="number" th:field="*{cnpj}" name="cnpj" required placeholder="CNPJ">
+  </div>      
+  <div class="col-md-6">
+    <label>Produto</label>
+    <input class="form-control" type="text" th:field="*{produto}" name="produto" placeholder="Produto">
+  </div>    
+  <div class="col-12">
+    <label>Endereço</label>
+    <input class="form-control" name="endereco" th:field="*{endereco}" placeholder="Endereço">
+  </div>
+  <div class="col-md-4">
+    <label>Contato</label>
+    <input class="form-control" type="text" th:field="*{contato}" name="contato" placeholder="Contato">
+  </div>
+  <div class="col-md-4">
+    <label>Status</label>
+    <input class="form-control" type="text" th:field="*{status}" name="status" placeholder="Status">
+  </div>
+  <div class="col-12">			
+		<input class="btn btn-light" type="submit" value="Salvar">
+>>>>>>> Stashed changes
 	</form>
 </div>
 </div>

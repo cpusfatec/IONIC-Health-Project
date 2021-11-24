@@ -10,6 +10,7 @@
 <title>Listas de clientes</title>
 </head>
 <style>
+<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
 }
@@ -57,18 +58,96 @@ body {
   color: black;
 }
 
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(26, 26, 141), rgb(114, 114, 114));
+    background-size: cover;
+    background-position: center;
+}
+.topnav{
+    background-color: rgba(0, 0, 0, 0.089);
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topnav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.topnav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.topnav ul li a:hover{
+    color: #2985ff;
+}
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    color: #2985ff;
+    border: 1px solid #2985ff;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: coolvetica,sans-serif;
+    color: #f2f2f2;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+body{
+  text-align: center;
+}
+.container{
+  text-align: center;
+}
+h1{
+  font-size: 40px;
+  color: #fff;
+}
+h3{
+  font-size: 20px;
+  color: #fff;
+}
+>>>>>>> Stashed changes
 .leftcolumn {   
   float: left;
   width: 75%;
 }
+<<<<<<< Updated upstream
 
 /* Right column */
+=======
+>>>>>>> Stashed changes
 .rightcolumn {
   float: left;
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
+<<<<<<< Updated upstream
 
 /* Fake image */
 .fakeimg {
@@ -78,33 +157,45 @@ body {
 }
 
 /* Add a card effect for articles */
+=======
+>>>>>>> Stashed changes
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
+<<<<<<< Updated upstream
 
 /* Clear floats after the columns */
+=======
+>>>>>>> Stashed changes
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+<<<<<<< Updated upstream
 
 /* Footer */
+=======
+>>>>>>> Stashed changes
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
   margin-top: 20px;
 }
+<<<<<<< Updated upstream
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+=======
+>>>>>>> Stashed changes
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
+<<<<<<< Updated upstream
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -182,10 +273,41 @@ body {
 	<br><br><br>
 	
 	<h3>Lista de clientes B2B</h3>
+=======
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+<div class="banner" >
+  <div class="topnav">
+      <h2>ㅤIONIC Health Project</h2>
+      <ul>
+        <li><a href="/" role="button">Home</a></li>
+        <li><a href="/selecionarcadastro" role="button">Cadastro de Clientes</a></li>
+        <li><a href="/listaclientes" role="button">Lista de clientes</a></li>
+        <li><a href="/pipeline" role="button">Pipeline</a></li>
+        <li><a href="/import" role="button">Importação de arquivos</a></li>
+        <li><a href="/login" role="button">Login</a></li>
+        <li><a href="/logout" role="button">Logout</a></li>
+      </ul>
+  </div>
+  <div class="body">
+	<h1 class="titulo">Lista de clientes</h1><br>
+	<h3>Lista de clientes B2C</h3>
+>>>>>>> Stashed changes
 	<div class="form-group input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
 		<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
 	</div>
+<<<<<<< Updated upstream
 	<table id="tabela2" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
 		<thead class="thead-dark">
 			<tr>
@@ -223,7 +345,86 @@ body {
    		$('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
     </script>
     
+=======
+		<table id="tabela1" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
+			<thead class="thead-dark">
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>CRM</th>
+					<th>Email</th>
+					<th>CPF</th>
+					<th>Telefone</th>
+					<th>Especialidade</th>
+					<th>Produto</th>
+					<th>Status</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="cliente : ${clientes}">
+					<td th:text = "${cliente.id}"></td>
+					<td th:text = "${cliente.nome}"></td>
+					<td th:text = "${cliente.crm}"></td>
+					<td th:text = "${cliente.email}"></td>
+					<td th:text = "${cliente.cpf}"></td>
+					<td th:text = "${cliente.telefone}"></td>
+					<td th:text = "${cliente.especialidade}"></td>
+					<td th:text = "${cliente.produto}"></td>
+					<td th:text = "${cliente.status}"></td>
+					<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
+					<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+			   $('input#txt_consulta').quicksearch('table#tabela1 tbody tr');
+		</script>
+		<br><br><br>
+		
+		<h3>Lista de clientes B2B</h3>
+		<div class="form-group input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+			<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+		</div>
+		<table id="tabela2" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
+			<thead class="thead-dark">
+				<tr>
+					<th>ID</th>
+					<th>Categoria</th>
+					<th>Razão Social</th>
+					<th>CNPJ</th>
+					<th>Endereço</th>
+					<th>Contato</th>
+					<th>Email</th>
+					<th>Produto</th>
+					<th>Status</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="clienteb2b : ${clientesb2b}">
+					<td th:text = "${clienteb2b.id}"></td>
+					<td th:text = "${clienteb2b.categoria}"></td>
+					<td th:text = "${clienteb2b.razaosocial}"></td>
+					<td th:text = "${clienteb2b.cnpj}"></td>
+					<td th:text = "${clienteb2b.endereco}"></td>
+					<td th:text = "${clienteb2b.contato}"></td>
+					<td th:text = "${clienteb2b.email}"></td>
+					<td th:text = "${clienteb2b.produto}"></td>
+					<td th:text = "${clienteb2b.status}"></td>
+					<td><a th:href="@{/editarclienteB2B/{id}(id=${clienteb2b.id})}">Editar</a></td>
+					<td><a th:href="@{/deletarclienteB2B/{id}(id=${clienteb2b.id})}">Deletar</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+			   $('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
+		</script>
+	</div>
+>>>>>>> Stashed changes
 </div>
-
 </body>
 </html>
