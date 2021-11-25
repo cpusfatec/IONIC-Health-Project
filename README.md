@@ -35,10 +35,6 @@ O Burndown chart ou gráfico de Burndown é o gráfico utilizado pelas equipes S
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
-# Casos de Uso:
-![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/casos.jpeg)
-
-
 # Equipe 👥:
 
 #### :mortar_board: Higor dos Santos Mariano - Product Owner
@@ -60,11 +56,6 @@ ________________________________________________________________________________
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />]() | 
 [<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/Danilo2010) | 
 [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](danilofatecsjc@gmail.com) |
-
-#### :mortar_board: Jean Gomes - Time de Desenvolvimento
-[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jean-santos-562b74200/) | 
-[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/jeangomes3) | 
-[<img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />](jean.santos27@fatec.sp.gov.br) |
 
 #### :mortar_board: Levi - Time de Desenvolvimento
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/levi-motta-5001a2173/) | 
