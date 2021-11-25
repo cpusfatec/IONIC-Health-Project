@@ -6,148 +6,6 @@
 <title>Editar cadastros</title>
 </head>
 <style>
-<<<<<<< Updated upstream
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
-  text-align: center;
-}
-
-/* Header/Blog Title */
-.header {
-  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
-  padding: 10px;
-  text-align: center;
-  
-}
-
-.container {
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 30px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: rgb(186, 189, 194);
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(152, 163, 168);
-  color: black;
-}
-
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-
-form,
-label {
-  display: block;
-  padding: 10px;
-}
-form {
-  text-align: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-label {
-  color: #FFF;
-  text-align: center;
-}
-input {
-  display: inline-block;
-  padding-left: 10px;
-}
-</style>
-
-
-<body>
-<div class="header">
-  <h1>IONIC HEALTH CRM </h1>
-  <p>Módulo Vendas</p>
-</div>
-
-<div class="topnav">
-	<a href="/" role="button">Home</a>
-  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
-  	<a href="/listaclientes" role="button">Lista de clientes</a>
-  	<a href="/pipeline" role="button">Pipeline</a>
-  	<a href="/import" role="button">Importação de arquivos</a>
-  	<a href="/logout" style="float:right" role="button">Logout</a>
-  	<a href="/login" style="float:right" role="button">Login</a>
-=======
 *{
     margin: 0px;
     padding: 0px;
@@ -241,45 +99,11 @@ h3{
       <li><a href="/login" role="button">Login</a></li>
       <li><a href="/logout" role="button">Logout</a></li>
     </ul>
->>>>>>> Stashed changes
 </div>
 <div class="container">
 <br>
 <h1>Editar cadastros</h1>
 <br>
-<<<<<<< Updated upstream
-	<form th:action="@{/salvarcliente}" th:object="${cliente}"
-			method="post" >
-			
-			<input type="hidden" th:name="id" th:value="${cliente.id}" >
-			
-			<label>Nome</label>
-			<input class="btn btn-light" name="nome" type="text" th:field="*{nome}" placeholder="Nome"><br><br>
-			
-			<label>CRM</label>
-			<input class="btn btn-light" name="crm" type="text" th:field="*{crm}" placeholder="CRM"><br><br>
-			
-			<label>Email</label>
-			<input class="btn btn-light" name="email" type="email" th:field="*{email}" placeholder="Email" required><br><br>
-			
-			<label>CPF</label>
-			<input class="btn btn-light" name="cpf" type="text" th:field="*{cpf}" placeholder="CPF"><br><br>
-			
-			<label>Telefone</label>
-			<input class="btn btn-light" name="telefone" type="text" th:field="*{telefone}" placeholder="Telefone"><br><br>
-			
-			<label>Especialidade</label>
-			<input class="btn btn-light" name="especialidade" th:field="*{especialidade}" placeholder="Especialidade"><br><br>
-			
-			<label>Produto</label>
-			<input class="btn btn-light" name="produto" th:field="*{produto}" placeholder="Produto"><br><br>
-			
-			<label>Status</label>
-			<input class="btn btn-light" name="status" th:field="*{status}" placeholder="Status"><br><br>
-					
-			<input class="btn btn-light" type="submit" value="Salvar">
-	</form>
-=======
 	<form th:action="@{/salvarcliente}" th:object="${cliente}"  class="row g-3" method="post">
 			
 			<input type="hidden" th:name="id" th:value="${cliente.id}" >
@@ -329,7 +153,6 @@ h3{
         </div>
     </form><br><br>
 
->>>>>>> Stashed changes
 </div>
 </body>
 </html>

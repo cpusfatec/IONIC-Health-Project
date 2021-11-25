@@ -10,55 +10,6 @@
 <title>Listas de clientes</title>
 </head>
 <style>
-<<<<<<< Updated upstream
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: url('http://www.armarinhospolo.com.br/wp-content/uploads/2017/07/azul-fundo-site.jpg') no-repeat;
-  text-align: center;
-}
-
-/* Header/Blog Title */
-.header {
-  background: url('https://lawini.com.br/wp-content/uploads/2015/10/fundo-site-responsivo.png') no-repeat;
-  padding: 10px;
-  text-align: center;
-  
-}
-
-.container {
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 30px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: rgb(186, 189, 194);
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(152, 163, 168);
-  color: black;
-}
-
-=======
 *{
     margin: 0px;
     padding: 0px;
@@ -131,149 +82,37 @@ h3{
   font-size: 20px;
   color: #fff;
 }
->>>>>>> Stashed changes
 .leftcolumn {   
   float: left;
   width: 75%;
 }
-<<<<<<< Updated upstream
-
-/* Right column */
-=======
->>>>>>> Stashed changes
 .rightcolumn {
   float: left;
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
-<<<<<<< Updated upstream
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-=======
->>>>>>> Stashed changes
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
-<<<<<<< Updated upstream
-
-/* Clear floats after the columns */
-=======
->>>>>>> Stashed changes
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-<<<<<<< Updated upstream
-
-/* Footer */
-=======
->>>>>>> Stashed changes
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
   margin-top: 20px;
 }
-<<<<<<< Updated upstream
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-=======
->>>>>>> Stashed changes
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
-<<<<<<< Updated upstream
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-
-
-<body>
-<div class="header">
-  <h1>IONIC HEALTH CRM </h1>
-  <p>Módulo Vendas</p>
-</div>
-
-<div class="topnav">
-	<a href="/" role="button">Home</a>
-  	<a href="/selecionarcadastro" role="button">Cadastro de Clientes</a>
-  	<a href="/listaclientes" role="button">Lista de clientes</a>
-  	<a href="/pipeline" role="button">Pipeline</a>
-  	<a href="/import" role="button">Importação de arquivos</a>
-  	<a href="/logout" style="float:right" role="button">Logout</a>
-  	<a href="/login" style="float:right" role="button">Login</a>
-</div>
-
-
-
-<div class="body">
-<h1 class="titulo">Lista de clientes</h1><br>
-
-
-<h3>Lista de clientes B2C</h3>
-<div class="form-group input-group">
-	<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-	<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
-</div>
-	<table id="tabela1" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
-		<thead class="thead-dark">
-			<tr>
-				<th>ID</th>
-				<th>Nome</th>
-				<th>CRM</th>
-				<th>Email</th>
-				<th>CPF</th>
-				<th>Telefone</th>
-				<th>Especialidade</th>
-				<th>Produto</th>
-				<th>Status</th>
-				<th></th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:each="cliente : ${clientes}">
-				<td th:text = "${cliente.id}"></td>
-				<td th:text = "${cliente.nome}"></td>
-				<td th:text = "${cliente.crm}"></td>
-				<td th:text = "${cliente.email}"></td>
-				<td th:text = "${cliente.cpf}"></td>
-				<td th:text = "${cliente.telefone}"></td>
-				<td th:text = "${cliente.especialidade}"></td>
-				<td th:text = "${cliente.produto}"></td>
-				<td th:text = "${cliente.status}"></td>
-				<td><a th:href="@{/editarcliente/{id}(id=${cliente.id})}">Editar</a></td>
-				<td><a th:href="@{/deletarcliente/{id}(id=${cliente.id})}">Deletar</a></td>
-			</tr>
-		</tbody>
-	</table>
-	<script>
-   		$('input#txt_consulta').quicksearch('table#tabela1 tbody tr');
-    </script>
-	<br><br><br>
-	
-	<h3>Lista de clientes B2B</h3>
-=======
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -302,50 +141,10 @@ h3{
   <div class="body">
 	<h1 class="titulo">Lista de clientes</h1><br>
 	<h3>Lista de clientes B2C</h3>
->>>>>>> Stashed changes
 	<div class="form-group input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
 		<input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
 	</div>
-<<<<<<< Updated upstream
-	<table id="tabela2" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
-		<thead class="thead-dark">
-			<tr>
-				<th>ID</th>
-				<th>Categoria</th>
-				<th>Razão Social</th>
-				<th>CNPJ</th>
-				<th>Endereço</th>
-				<th>Contato</th>
-				<th>Email</th>
-				<th>Produto</th>
-				<th>Status</th>
-				<th></th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:each="clienteb2b : ${clientesb2b}">
-				<td th:text = "${clienteb2b.id}"></td>
-				<td th:text = "${clienteb2b.categoria}"></td>
-				<td th:text = "${clienteb2b.razaosocial}"></td>
-				<td th:text = "${clienteb2b.cnpj}"></td>
-				<td th:text = "${clienteb2b.endereco}"></td>
-				<td th:text = "${clienteb2b.contato}"></td>
-				<td th:text = "${clienteb2b.email}"></td>
-				<td th:text = "${clienteb2b.produto}"></td>
-				<td th:text = "${clienteb2b.status}"></td>
-				<td><a th:href="@{/editarclienteB2B/{id}(id=${clienteb2b.id})}">Editar</a></td>
-				<td><a th:href="@{/deletarclienteB2B/{id}(id=${clienteb2b.id})}">Deletar</a></td>
-			</tr>
-		</tbody>
-	</table>
-	
-	<script>
-   		$('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
-    </script>
-    
-=======
 		<table id="tabela1" class="table table-striped" style="background-color: white; border-radius:5px; border:none;">
 			<thead class="thead-dark">
 				<tr>
@@ -424,7 +223,6 @@ h3{
 			   $('input#txt_consulta').quicksearch('table#tabela2 tbody tr');
 		</script>
 	</div>
->>>>>>> Stashed changes
 </div>
 </body>
 </html>
