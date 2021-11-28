@@ -13,12 +13,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 import fatec.projetoapi.model.Cliente;
 import fatec.projetoapi.model.ClienteB2B;
+import fatec.projetoapi.model.Usuario;
 import fatec.projetoapi.repository.ClienteB2BRepository;
 import fatec.projetoapi.repository.ClienteRepository;
+import fatec.projetoapi.repository.UsuarioRepository;
 
 
 @Controller
 public class ClienteController {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
 	
 	@Autowired
 	private ClienteRepository clienteRepository;
@@ -63,6 +68,17 @@ public class ClienteController {
 		return andView;
 	}
 	
+	@GetMapping("/salvaruser")
+	public ModelAndView salvar(Usuario usuario) {
+		
+			usuarioRepository.save(usuario);
+			ModelAndView andView = new ModelAndView("cadastro/cadastrouser");
+			Iterable<Usuario> usuariosIt = usuarioRepository.findAll();
+			andView.addObject("usuarios", usuariosIt);
+			
+		return andView;
+	}
+	
 	@GetMapping("/listaclientes")
 	public ModelAndView clientes() {
 		
@@ -72,6 +88,16 @@ public class ClienteController {
 		
 		Iterable<ClienteB2B> clientesb2bIt = clienteb2bRepository.findAll();
 		andView.addObject("clientesb2b", clientesb2bIt);
+		
+		return andView;
+	}
+	
+	@GetMapping("/listausers")
+	public ModelAndView usuario() {
+		
+		ModelAndView andView = new ModelAndView("listausers");
+		Iterable<Usuario> usuariosIt = usuarioRepository.findAll();
+		andView.addObject("usuarios", usuariosIt);
 		
 		return andView;
 	}
@@ -99,6 +125,14 @@ public class ClienteController {
 		ClienteB2B clienteb2b = clienteb2bRepository.getOne(id);
 		model.addAttribute("clienteb2b", clienteb2b);
 		return "cadastro/editarclienteB2B";
+	}
+	
+	@GetMapping("/editaruser/{id}")
+	public String editarusuario(@PathVariable(value = "id") long id, Model model) {
+
+		Usuario usuario = usuarioRepository.getOne(id);
+		model.addAttribute("cliente", usuario);
+		return "cadastro/editaruser";
 	}
 	
 	@PostMapping("/salvarcliente")

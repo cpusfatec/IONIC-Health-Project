@@ -48,7 +48,7 @@
     background-position: center;
 }
 .topnav{
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     margin: auto;
     padding: 10px 0;
@@ -251,9 +251,13 @@ label #cancel{
                 <i class="fas fa-user-alt"></i>
                 <span> Cadastro Clientes</span>  
             </a>
-            <a sec:authorize="hasRole('gestor')" href="/cadastrouser" role="button">
+             <a sec:authorize="hasRole('gestor')" href="/cadastrouser" role="button">
                 <i class="fas fa-stream"></i>
                 <span>Cadastro Usuarios</span>
+            </a>
+            <a sec:authorize="hasRole('gestor')" href="/listausers" role="button">
+                <i class="fas fa-stream"></i>
+                <span>Lista de Usuarios</span>
             </a>
            <a href="/listaclientes" role="button">
                 <i class="far fa-plus-square"></i>

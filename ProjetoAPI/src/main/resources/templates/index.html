@@ -34,16 +34,17 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    
 }
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top right, rgb(26, 26, 141), rgb(114, 114, 114));
+    background-image: url(https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/s960x960/261331010_100742649123287_1339809821488811329_n.jpg?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=Z7zL33n_AyMAX90pjV5&_nc_ht=scontent-gru2-1.xx&oh=328af33b323eda3f0b01b50bf7c72749&oe=61A7EDEA);
     background-size: cover;
     background-position: center;
 }
 .topnav{
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     margin: auto;
     padding: 10px 0;
@@ -249,6 +250,10 @@ label #cancel{
             <a sec:authorize="hasRole('gestor')" href="/cadastrouser" role="button">
                 <i class="fas fa-stream"></i>
                 <span>Cadastro Usuarios</span>
+            </a>
+            <a sec:authorize="hasRole('gestor')" href="/listausers" role="button">
+                <i class="fas fa-stream"></i>
+                <span>Lista de Usuarios</span>
             </a>
            <a href="/listaclientes" role="button">
                 <i class="far fa-plus-square"></i>

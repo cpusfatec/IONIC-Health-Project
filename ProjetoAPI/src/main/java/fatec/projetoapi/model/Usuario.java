@@ -1,6 +1,11 @@
 package fatec.projetoapi.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 @Entity
@@ -17,6 +22,9 @@ public class Usuario {
 	
 	@Column(name = "senha")
     private String senha;
+	
+	@Column(name = "role", nullable = false, length = 20)
+	private String role;
 	
 	public Usuario(String nome, String senha) {
         this.nome = nome;
@@ -49,6 +57,14 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 	
 }

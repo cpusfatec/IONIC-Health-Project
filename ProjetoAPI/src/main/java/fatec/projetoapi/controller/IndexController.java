@@ -21,6 +21,9 @@ public class IndexController {
 		return "pipeline";
 	}
 	
-	
+	@RequestMapping("/cadastrouser")
+	public String cadastrouser( ) {
+		return "cadastro/cadastrouser";
+	}
 	
 }

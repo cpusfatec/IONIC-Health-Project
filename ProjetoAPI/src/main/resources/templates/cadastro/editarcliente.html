@@ -47,7 +47,7 @@
 	text-align: center;
 }
 .topnav{
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     margin: auto;
     padding: 10px 0;
@@ -250,9 +250,13 @@ label #cancel{
                 <i class="fas fa-user-alt"></i>
                 <span> Cadastro Clientes</span>  
             </a>
-            <a sec:authorize="hasRole('gestor')" href="/cadastrouser" role="button">
+             <a sec:authorize="hasRole('gestor')" href="/cadastrouser" role="button">
                 <i class="fas fa-stream"></i>
                 <span>Cadastro Usuarios</span>
+            </a>
+            <a sec:authorize="hasRole('gestor')" href="/listausers" role="button">
+                <i class="fas fa-stream"></i>
+                <span>Lista de Usuarios</span>
             </a>
            <a href="/listaclientes" role="button">
                 <i class="far fa-plus-square"></i>
@@ -271,11 +275,6 @@ label #cancel{
   <div class="topnav">
     <h2>ㅤIONIC Health Project</h2>
     <ul>
-      <li><a href="/" role="button">Home</a></li>
-      <li><a href="/selecionarcadastro" role="button">Cadastro de Clientes</a></li>
-      <li><a href="/listaclientes" role="button">Lista de clientes</a></li>
-      <li><a href="/pipeline" role="button">Pipeline</a></li>
-      <li><a href="/import" role="button">Importação de arquivos</a></li>
       <li><a href="/login" role="button">Login</a></li>
       <li><a href="/logout" role="button">Logout</a></li>
     </ul>
