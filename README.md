@@ -23,6 +23,7 @@ _CARD é uma forma de mensurar a dificuldade (projetada) de uma etapa do projeto
 ___________________________________________________________________________________________________________________________________________________________________________________
 # Manual do Usuário e Documentação do API 📚:
 Para acessar o Manual do Usuário e a Documentação do projeto clique aqui:
+
 [Manual do Usuário](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Manual-do-usu%C3%A1rio-Ionic-Health.pdf)
 
 [Documentação do API](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/DOCUMENTA%C3%87%C3%83O%20API%20.pdf)
