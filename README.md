@@ -14,7 +14,7 @@ Sprint é um termo utilizado na metodologia Scrum, um dos pilares do projeto em 
 - [X] Sprint 3 - 18/10/2021 a 07/11/2021 - [_ver detalhes..._](https://github.com/cpusfatec/IONIC-Health-Project/tree/Sprint-3)
 - [X] Sprint 4 - 08/11/2021 a 28/11/2021 - [_ver detalhes..._](https://github.com/cpusfatec/IONIC-Health-Project/tree/Sprint-4)
 - [X] Apresentação Final - 29/11/2021 a 05/12/2021
-- [ ] Feira de Soluções - 16/12/2021 - 19h
+- [X] Feira de Soluções - 16/12/2021 - 19h
 
 ![](https://github.com/cpusfatec/IONIC-Health-Project/blob/main/Imagens/CARDS.png)
 
